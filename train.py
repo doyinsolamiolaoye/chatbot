@@ -15,10 +15,17 @@ for intent in intents['intents']:
         w = tokenize(pattern)
         all_words.extend(w) # extends the array instead of creatng an array of arrays
         xy.append((w,tag))
-
+print(xy)
 ignore_words = ["?", "!", ",", "." ]
 
 all_words = [stem(word.lower()) for word in all_words if word not in ignore_words] #applies the stem function on each word in all_words that is not a punctuation
 
 all_words = sorted(set(all_words)) #sorts it and removes duplicate words
+tags = sorted(set(tags))
 
+X_train = [] # contains bag of words
+y_train = [] # associate number for each tag
+
+# for pattern_sentence, tag in xy:
+#     bag = bag_of_words(pattern_sentence, all_words)
+#     pass
