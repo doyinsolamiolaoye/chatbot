@@ -40,7 +40,7 @@ y_train = np.array(y_train)
 print(y_train)
 
 # Hyper-parameters 
-num_epochs = 1000
+
 
 
 
