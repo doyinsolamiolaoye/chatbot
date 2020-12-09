@@ -41,7 +41,7 @@ print(y_train)
 
 # Hyper-parameters 
 num_epochs = 1000
-batch_size = 8
+
 
 
 
