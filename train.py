@@ -38,8 +38,6 @@ X_train = np.array(X_train) #contains an array of )'s and 1's which represent wh
 y_train = np.array(y_train) # contains from 0 to 6, each number representing each tag/label whether its greetings, goodbye, payments, e.t.c
 
 
-sdjksdfkd kdvsksdd,ncvd
-
 
 
 
