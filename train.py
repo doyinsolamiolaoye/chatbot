@@ -57,8 +57,6 @@ class ChatDataset(Dataset):
     def __getitem__(self, index):
         return self.x_data[index], self.y_data[index]
 
-    # we can call len(dataset) to return the size
-
 
 
 
