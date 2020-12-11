@@ -55,7 +55,7 @@ class ChatDataset(Dataset):
 
     # support indexing such that dataset[i] can be used to get i-th sample
     def __getitem__(self, index):
-        return self.x_data[index]
+        return self.x_data[in
 
 
 
