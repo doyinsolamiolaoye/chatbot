@@ -59,7 +59,7 @@ class ChatDataset(Dataset):
 
     # we can call len(dataset) to return the size
     def __len__(self):
-        return self.n_samples
+        
 
 
 
