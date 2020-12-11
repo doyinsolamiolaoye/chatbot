@@ -37,6 +37,29 @@ for pattern_sentence, tag in xy: # each toeknized word and its tag
 X_train = np.array(X_train) #contains an array of )'s and 1's which represent whether which word is in the bag of words
 y_train = np.array(y_train) # contains from 0 to 6, each number representing each tag/label whether its greetings, goodbye, payments, e.t.c
 
+# Hyper-parameters 
+num_epochs = 1000
+batch_size = 8
+learning_rate = 0.001
+input_size = len(X_train[0])
+hidden_size = 8
+output_size = len(tags)
+print(input_size, output_size)
+
+class ChatDataset(Dataset):
+
+    def __init__(self):
+        self.n_samples = len(X_train)
+        self.x_data = X_train
+        self.y_data = y_train
+
+    # support indexing such that dataset[i] can be used to get i-th sample
+    def __getitem__(self, index):
+        return self.x_data[index], self.y_data[index]
+
+    # we can call len(dataset) to return the size
+    def __len__(self):
+        return self.n_samples
 
 
 
