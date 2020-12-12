@@ -46,10 +46,7 @@ hidden_size = 8
 output_size = len(tags)
 print(input_size, output_size)
 
-class ChatDataset(Dataset):
-
-    def __init__(self):
-
+class ChatDataset(Dataset
 
 
 
