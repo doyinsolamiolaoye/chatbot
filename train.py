@@ -43,5 +43,3 @@ y_train = np.array(y_train) # contains from 0 to 6, each number representing eac
 
 
 
-
-
