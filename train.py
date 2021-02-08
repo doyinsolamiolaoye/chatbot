@@ -35,6 +35,5 @@ for pattern_sentence, tag in xy: # each toeknized word and its tag
     y_train.append(label) # appends the index of the tag to the y_label list
 
 
-
 X_train = np.array(X_train) #contains an array of )'s and 1's which represent whether which word is in the bag of words
 y_train = np.array(y_train) # contains from 0 to 6, each number representing each tag/label whether its greetings, goodbye, payments, e.t.c
