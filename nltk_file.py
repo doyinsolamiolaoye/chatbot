@@ -23,6 +23,5 @@ def bag_of_words(tokenized_sentence, all_words): #takes in the tokenized sentenc
         if word in tokenized_sentence:
             bag[idx] = 1.0
 
-         
-            
+   
     return bag
